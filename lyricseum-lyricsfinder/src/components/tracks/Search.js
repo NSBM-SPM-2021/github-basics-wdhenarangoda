@@ -7,6 +7,23 @@ class Search extends Component {
     trackTitle: " ",
   };
 
+  findTrack = (e) => {
+    e.preventDefault();
+
+    axios
+      .get(
+        `https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.search?q_track=${this.state.trackTitle}&page_size=10&page=1&s_track_rating=desc&apikey=${process.env.REACT_APP_MM_KEY}`
+      )
+      .then((res) => {
+        console.log(res.data);
+      })
+      .catch((err) => console.log(err));
+  };
+
+  onChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
   render() {
     return (
       <Consumer>
@@ -19,6 +36,24 @@ class Search extends Component {
               <p className="lead text-center">
                 Get your favourite lyrics from any song
               </p>
+              <form onSubmit={this.findTrack}>
+                <div className="form-group">
+                  <input
+                    type="text"
+                    className="form-control form-control-lg"
+                    placeholder="Song title..."
+                    name="trackTitle"
+                    value={this.state.trackTitle}
+                    onChange={this.onChange}
+                  />
+                </div>
+                <button
+                  className="btn btn-primary col-12 btn-sm mb-5"
+                  type="Submit"
+                >
+                  Get Track Lyrics
+                </button>
+              </form>
             </div>
           );
         }}
