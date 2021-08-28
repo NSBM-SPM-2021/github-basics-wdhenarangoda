@@ -7,7 +7,7 @@ class Search extends Component {
     trackTitle: " ",
   };
 
-  findTrack = (e) => {
+  findTrack = (dispatch, e) => {
     e.preventDefault();
 
     axios
@@ -15,7 +15,11 @@ class Search extends Component {
         `https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.search?q_track=${this.state.trackTitle}&page_size=10&page=1&s_track_rating=desc&apikey=${process.env.REACT_APP_MM_KEY}`
       )
       .then((res) => {
-        console.log(res.data);
+        dispatch({
+          type: "SEARCH_TRACKS",
+          payload: res.data.message.body.track_list,
+        });
+        this.setState({ trackTitle: "" });
       })
       .catch((err) => console.log(err));
   };
@@ -28,6 +32,7 @@ class Search extends Component {
     return (
       <Consumer>
         {(value) => {
+          const { dispatch } = value;
           return (
             <div className="card card-body mb-4 p-4">
               <h1 className="dispaly-4 text-center">
@@ -36,7 +41,7 @@ class Search extends Component {
               <p className="lead text-center">
                 Get your favourite lyrics from any song
               </p>
-              <form onSubmit={this.findTrack}>
+              <form onSubmit={this.findTrack.bind(this, dispatch)}>
                 <div className="form-group">
                   <input
                     type="text"
