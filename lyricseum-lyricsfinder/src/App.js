@@ -25,7 +25,7 @@ class App extends Component {
                 />
                 <Route
                   exact
-                  path="github-basics-wdhenarangoda/lyrics/track/:id"
+                  path="/github-basics-wdhenarangoda/lyrics/track/:id"
                   component={Lyrics}
                 />
               </Switch>
