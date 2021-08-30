@@ -25,7 +25,7 @@ jobs:
 
 
       - name: Deploy
-        uses: NSBM-SPM-2021/github-basics-wdhenarangoda
+        uses: NSBM-SPM-2021/github-basics-wdhenarangoda-action@4.1.1
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: build # The folder the action should deploy.   
