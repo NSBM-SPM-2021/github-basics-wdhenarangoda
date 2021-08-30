@@ -23,7 +23,11 @@ class App extends Component {
                   path="/github-basics-wdhenarangoda"
                   component={Index}
                 />
-                <Route exact path="/lyrics/track/:id" component={Lyrics} />
+                <Route
+                  exact
+                  path="github-basics-wdhenarangoda/lyrics/track/:id"
+                  component={Lyrics}
+                />
               </Switch>
             </div>
           </React.Fragment>
