@@ -21,7 +21,6 @@ const Track = (props) => {
           </p>
           <Link
             exact
-            path
             to={`github-basics-wdhenarangoda/lyrics/track/${track.track_id}`}
             className="btn btn-dark  col-12"
           >
