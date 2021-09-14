@@ -24,7 +24,6 @@ class App extends Component {
                   component={Index}
                 />
                 <Route
-                  exact
                   path="/github-basics-wdhenarangoda/lyrics/track/:id"
                   component={Lyrics}
                 />
