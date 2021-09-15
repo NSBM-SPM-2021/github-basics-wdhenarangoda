@@ -41,10 +41,7 @@ class Lyrics extends Component {
     } else {
       return (
         <React.Fragment>
-          <Link
-            to="/github-basics-wdhenarangoda"
-            className="btn btn-dark btn-sm mb-4"
-          >
+          <Link to="/" className="btn btn-dark btn-sm mb-4">
             Go Back
           </Link>
           <div className="card">
