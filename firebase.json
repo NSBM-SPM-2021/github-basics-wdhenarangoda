@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "lyricseum-lyricsfinder/build",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",

@@ -28,13 +28,13 @@ jobs:
     - run: npm install -g yarn
     - name: npm install, build
       run: |
-        npm install --prefix lyricseum-lyricsfinder/
-        npm run build --prefix lyricseum-lyricsfinder/
+        npm install
+        npm run build
     - name: Archive Build
       uses: actions/upload-artifact@v2
       with:
         name: build
-        path: lyricseum-lyricsfinder/build
+        path: build
         
   deploy:
     name: Deploy
@@ -46,14 +46,13 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: build
-          path: lyricseum-lyricsfinder/build
+          path: build
       - name: Depoy to Firebase
         uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          PROJECT_PATH: ./lyricseum-lyricsfinder
 
 
 
