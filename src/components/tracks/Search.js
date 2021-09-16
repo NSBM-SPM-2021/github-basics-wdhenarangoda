@@ -35,11 +35,11 @@ class Search extends Component {
           const { dispatch } = value;
           return (
             <div className="card card-body mb-4 p-4">
-              <h1 className="dispaly-4 text-center">
+              <h1 className="font-weight-normal display-4 text-center">
                 <i className="fas fa-music"></i> Search For A Song
               </h1>
               <p className="lead text-center">
-                Get your favourite lyrics from any song
+                Get your favourite lyrics from any song!
               </p>
               <form onSubmit={this.findTrack.bind(this, dispatch)}>
                 <div className="form-group">
@@ -49,14 +49,16 @@ class Search extends Component {
                     placeholder="Song title..."
                     name="trackTitle"
                     value={this.state.trackTitle}
-                    onChange={this.onChange}
+                    onChange={(e) =>
+                      this.setState({ trackTitle: e.target.value })
+                    }
                   />
                 </div>
                 <button
-                  className="btn btn-primary col-12 btn-sm mb-5"
+                  className="btn btn-primary btn-lg btn-block md-5"
                   type="Submit"
                 >
-                  Get Track Lyrics
+                  Search
                 </button>
               </form>
             </div>
