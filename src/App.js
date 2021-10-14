@@ -5,8 +5,6 @@ import Navbar from "./components/layout/Navbar";
 import Index from "./components/layout/Index";
 import Lyrics from "./components/tracks/Lyrics";
 
-import "./App.css";
-
 import { Provider } from "./context";
 
 class App extends Component {
