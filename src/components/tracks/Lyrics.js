@@ -11,13 +11,6 @@ class Lyrics extends Component {
   };
 
   componentDidMount() {
-    // axios.get(
-    //   `https://arcane-springs-59786.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.album.get?album_id=${this.props.match.params.id}&apikey=${process.env.REACT_APP_MM_KEY}`
-    // );
-    // .then(res) => {
-    // this.setState({ lyrics: res.data.message.body.album });
-    // }
-
     axios
       .get(
         `https://arcane-springs-59786.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${this.props.match.params.id}&apikey=${process.env.REACT_APP_MM_KEY}`
