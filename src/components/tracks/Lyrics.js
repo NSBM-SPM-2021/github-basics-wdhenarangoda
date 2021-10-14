@@ -7,10 +7,17 @@ import Moment from "react-moment";
 class Lyrics extends Component {
   state = {
     track: {},
-    Lyrics: {},
+    lyrics: {},
   };
 
   componentDidMount() {
+    // axios.get(
+    //   `https://arcane-springs-59786.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.album.get?album_id=${this.props.match.params.id}&apikey=${process.env.REACT_APP_MM_KEY}`
+    // );
+    // .then(res) => {
+    // this.setState({ lyrics: res.data.message.body.album });
+    // }
+
     axios
       .get(
         `https://arcane-springs-59786.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${this.props.match.params.id}&apikey=${process.env.REACT_APP_MM_KEY}`
@@ -60,14 +67,10 @@ class Lyrics extends Component {
             </li>
             <li className="list-group-item">
               <strong>Song Genre</strong>:{" "}
-              {
-                track.primary_genres.music_genre_list.length === 0
-                  ? "-"
-                  : track.primary_genres.music_genre_list[0].music_genre
-                      .music_genre_name_extended
-                // track.primary_genres.music_genre_list[0].music_genre
-                // .music_genre_name_extended
-              }
+              {track.primary_genres.music_genre_list.length === 0
+                ? "-"
+                : track.primary_genres.music_genre_list[0].music_genre
+                    .music_genre_name_extended}
             </li>
             <li className="list-group-item">
               <strong>Explicit Words</strong>:{" "}
