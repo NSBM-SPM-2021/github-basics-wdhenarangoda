@@ -1,4 +1,4 @@
-# LYRICSEUM - The LyricsFinder Application
+# LYRICSEUM - The LyricsFinder Application https://img.shields.io/github/v/release/NSBM-SPM-2021/github-basics-wdhenarangoda
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
