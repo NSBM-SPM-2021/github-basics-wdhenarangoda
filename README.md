@@ -6,6 +6,9 @@ This is a simple web application created by using React.js and Musixmatch Develo
 
 With this app, you can easily find the lyrics of any song you want and also this shows you the essential data such as **Artist Name**, **Song Genre**, **Availability of the Explicit Words** and **Release Date** of your favorite song.
 
+### Video URL
+:point_right: [Google Drive Link](https://drive.google.com/file/d/13cbF1nlpJcyIMoCIUFXrE1dTN91CRb3A/view?usp=sharing)
+
 ### Front Page
 ![](src/images/frontpage-UI.png)
 
