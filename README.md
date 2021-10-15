@@ -12,7 +12,7 @@ With this app, you can easily find the lyrics of any song you want and also this
 ### Lyrics Page
 ![](src/images/lyricspage-UI.png)
 
-
+## :computer: The Technology Stack
 * React
 * Musixmatch Developer API
 * CORS Anywhere: Node JS proxy
