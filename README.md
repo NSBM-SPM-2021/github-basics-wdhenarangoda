@@ -1,4 +1,4 @@
-# LYRICSEUM - The LyricsFinder Application ![Firebase Build and Deployment](https://github.com/NSBM-SPM-2021/github-basics-wdhenarangoda/actions/workflows/workflow.yml/badge.svg) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/NSBM-SPM-2021/github-basics-wdhenarangoda)
+# LYRICSEUM - The LyricsFinder Application [![Firebase Deployment](https://github.com/NSBM-SPM-2021/github-basics-wdhenarangoda/actions/workflows/workflow.yml/badge.svg)](https://github.com/NSBM-SPM-2021/github-basics-wdhenarangoda/actions/workflows/workflow.yml) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/NSBM-SPM-2021/github-basics-wdhenarangoda)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
