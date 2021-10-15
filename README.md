@@ -1,4 +1,4 @@
-# :musical_note: LYRICSEUM - The LyricsFinder Application ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) [![Firebase Deployment](https://github.com/NSBM-SPM-2021/github-basics-wdhenarangoda/actions/workflows/workflow.yml/badge.svg)](https://github.com/NSBM-SPM-2021/github-basics-wdhenarangoda/actions/workflows/workflow.yml) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/NSBM-SPM-2021/github-basics-wdhenarangoda)
+# :musical_note: LYRICSEUM - The LyricsFinder Application [![Firebase Deployment](https://github.com/NSBM-SPM-2021/github-basics-wdhenarangoda/actions/workflows/workflow.yml/badge.svg)](https://github.com/NSBM-SPM-2021/github-basics-wdhenarangoda/actions/workflows/workflow.yml) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/NSBM-SPM-2021/github-basics-wdhenarangoda)
 
 ## :dart: Introduction
 
